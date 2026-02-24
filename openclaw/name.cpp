@@ -4,10 +4,10 @@ using namespace std;
 
 int main()
 {
-    cout << "Как тебя зовут";
+    cout << "Как тебя зовут? ";
     string name;
     cin >> name;
-    cout << "Сколько лет?";
+    cout << "Сколько лет? ";
     int age;
     cin >> age;
 
