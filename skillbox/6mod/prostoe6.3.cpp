@@ -14,6 +14,10 @@ int main()
         if (num % current == 0)
         {
             count++;
+            if (count > 2)
+            {
+                break;
+            }
         }
         current++;
     }
