@@ -9,7 +9,7 @@ int main()
     int num;
     int sum = 0;
 
-    if (count <= 0)
+    if (count < 0)
     {
         cout << "Количество чисел не может быть отрицательным! Попробуйте еще раз: ";
         cin >> count;

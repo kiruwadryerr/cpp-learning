@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    string answ = "Да, конечно, сделал";
+    string answ = "Да, конечно, сделал.";
     string line;
     for(int n = 1; line != answ; n++)
     {
