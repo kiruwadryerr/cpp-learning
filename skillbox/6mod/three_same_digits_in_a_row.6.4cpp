@@ -1,0 +1,37 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int num;
+    cout << "Enter number: ";
+    cin >> num;
+
+    int digit;
+    int prev1 = -1;
+    int prev2 = -1;
+    bool hasTriple = false;
+
+    while (num > 0)
+    {
+        digit = num % 10;
+
+        if (digit == prev1 && digit == prev2)
+        {
+            hasTriple = true;
+            break;
+        }
+
+        prev2 = prev1;
+        prev1 = digit;
+
+        num /= 10;
+    }
+
+    if (hasTriple)
+        cout << "YES" << endl;
+    else
+        cout << "NO" << endl;
+
+    return 0;
+}
